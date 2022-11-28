@@ -1,5 +1,5 @@
 // this is da code for uhhhhhhhh api1 
-urlAPI1 = ('http://www.giantbomb.com/api/search/?api_key=f9dc8fa146302bbe5fdbbfdb95ba885c440dc300&format=json&query="among"&resources=game')
+urlAPI1 = ('http://www.giantbomb.com/api/search/?api_key=f9dc8fa146302bbe5fdbbfdb95ba885c440dc300&format=json&query=""&resources=game')
 
 // this code here is what searches the api
 function search(){
