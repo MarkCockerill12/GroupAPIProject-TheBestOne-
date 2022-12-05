@@ -76,19 +76,23 @@ fetch(urlAPI1)
   .then((resp) => resp.json())
   .then(function(game) {
     console.log(game);
+    for (i in game.results){
+      console.log(game.results[i].name)
+    
     
       const card = document.createElement('div');
       card.setAttribute('class', 'card');
 
       const h1 = document.createElement('h1');
-      h1.textContent = game.name;
+      h1.textContent = game.results[i].name;
 
       const p = document.createElement('p');
       // game.playtime = game.playtime.substring(0, 300); this limits the description - gotta use this with string words
-      p.textContent = `${game.name}...`;
+      p.textContent = `${game.results[i].released}`; //add ... after } for description effect
 
       container.appendChild(card);
       card.appendChild(h1);
       card.appendChild(p);
+    }
  }
 )
