@@ -13,16 +13,8 @@
   <title>API Project</title>
 </head>
 <body>
-  <!-- Old version -->
-<!--
-<nav>
-<div>
-    <p>Enter game name</p>
-    <input class="enter" type="text" id="GAMENAME">
-    <input type="submit" onclick="search()" />
-</div>
-</nav>
--->
+
+  
 <!--Navbar part -->
 <nav class="navbar navbar-expand-lg bg-dark">
   <!--Responsive part -->
@@ -40,17 +32,17 @@
             <i class="bi bi-controller p-2"></i>Other Page
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="moreinfo.html">MoreInfo</a></li>
-            <li><a class="dropdown-item" href="#">**********</a></li>
+            <li><a class="dropdown-item" href="moreinfo.html">More Info</a></li>
+<!--             <li><a class="dropdown-item" href="#">**********</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">**********</a></li>
+            <li><a class="dropdown-item" href="#">**********</a></li> -->
           </ul>
         </li>
       </ul>
       <!--Search Bar -->
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Enter Game Name" aria-label="Search" id="GAMENAME">
-        <button class="btn btn-outline-success bg-white" type="submit">Search</button>
+        <button class="btn btn-outline-success bg-white" onclick="search()" type="submit">Search</button>
       </form>
     </div>
   </div>
