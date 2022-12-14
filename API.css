@@ -92,5 +92,11 @@ input {
   float:right;
 }
 
+body {
+  background-color: #333333
+  ;
+}
 
-
+.secondary{
+  background-color: #000000
+}
