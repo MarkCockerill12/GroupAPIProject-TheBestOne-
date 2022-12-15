@@ -19,6 +19,10 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-sm navbar-dark accent p-3" id="top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse pb-2" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto">
           <li class="nav-item active underlined mx-3">
@@ -29,7 +33,8 @@
           </li>
         </ul>
         <form class="d-flex justify-content-end" role="search">
-          <input class="form-control me-2" type="search" placeholder="Enter Game Name" aria-label="Search" id="GAMENAME">
+          <input class="form-control me-2" type="search" placeholder="Enter Game Name" aria-label="Search"
+            id="GAMENAME">
           <button type="submit" class="btn btn-primary float-center" onclick="search()">Submit</button>
         </form>
       </div>
