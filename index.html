@@ -26,55 +26,66 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-sm navbar-dark accent p-3" id="top">
+    <nav class="navbar navbar-expand-sm navbar-dark accent p-3 border border-secondary" id="top">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse pb-2" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item active underlined mx-3">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link" href="contact_us.html">About Us</a>
-          </li>
-        </ul>
-        <div class="d-flex justify-content-end" role="search">
-          <input class="form-control me-2 enter" type="text" placeholder="Enter Game Name" aria-label="Search"
-            id="GAMENAME">
-          <input type="submit" class="btn btn-primary float-center" onclick="search()">
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <!--Main information part -->
-    <div id="root"></div>
-
-    <img id="pics"></img>
-  </main>
-
-  <footer>
-    <div class="container-fluid py-3 accent">
-      <div class="row">
-        <div class="col-12 text-center">
-          <p class="footer-content">
-            <a class="px-2 text-light font" href="#top">Back to Top</a>
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 text-center">
-          <p class="footer-copyright text-light font">© Mark Cockerill, Sarah Fombo, Jamie Till, Zihan Tang, Anas Saad.
-            All Rights Reserved.</p>
-        </div>
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse pb-2" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item active underlined mx-3">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="contact_us.html">About Us</a>
+        </li>
+      </ul>
+      <div class="d-flex justify-content-end" role="search">
+        <input class="form-control me-2 enter" type="text" placeholder="Enter Game Name" aria-label="Search"
+          id="GAMENAME">
+        <input type="submit" class="btn btn-primary float-center" onclick="search()">
       </div>
     </div>
-  </footer>
+  </nav>
+</header>
 
+<main>
+  <!--Main information part -->
+  <div id="root"></div>
+
+  <img id="pics"></img>
+</main>
+
+<footer class="fixed-bottom">
+<div class="container-fluid secondary text-white border border-secondary">
+  <div class="row">
+    <div class="col-12 text-center">
+      <p class="footer-content">
+        <a class="px-2 text-light font" href="#top">Back to Top</a>
+      </p>
+    </div>
+  </div>
+ <div class="row">
+      <div class="col">
+      <p class="text-start my-3"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</P>
+
+      </div>
+      <div class="col">
+
+      </div>
+    <div class="col-md-4">
+      <img src="./logo.png" class="float-end px-5 LogoImg" alt="logo image">
   
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center">
+      <p class="footer-copyright text-light">© Mark Cockerill, Sarah Fombo, Jamie Till, Zihan Tang, Anas Saad. All Rights Reserved.</p>
+  </div>
+</div>
+</div>
+</footer>
+
 </body>
 
 </html>

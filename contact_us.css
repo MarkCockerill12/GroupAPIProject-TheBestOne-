@@ -1,32 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-    background-color:rgb(45, 45, 45);
+  background-image: url('https://wallpaperaccess.com/full/486696.png');
 }
 
 h1, h2, p, label {
-    color:white;
-    font-family: 'Poppins', sans-serif;
+  color:white;
+  font-family: 'Poppins', sans-serif;
 }
 
 .nav-link {
-    color:white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
 }
 
 .nav-link:hover {
-    font-weight: 1000;
+  font-weight: 1000;
 }
 
 .accent {
-    background-color: rgb(22, 22, 22);
+  background-color: rgb(22, 22, 22);
 }
 
 .font{
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .underlined {
-    border-bottom: 3px solid #FAFAFF;
+  border-bottom: 3px solid #FAFAFF;
 }
+
+img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+  }
+  
+  p {
+    padding: 0 2.5rem 2.5rem;
+    margin: 0;
+  }
+
+.secondary{
+    background-color: #000000
+  }
+
+  .continute {
+    background-image: url('https://wallpaperaccess.com/full/486696.png');
+  }
+
+.LogoImg {
+    width: 240px;
+    height: 150px;
+  }
+

@@ -74,11 +74,12 @@ p {
 
 .card {
   margin: 1rem;
-  background: grey;
+  background: #000000;
   box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
   border-radius: 12px;
   overflow: hidden;
   transition: all .2s linear;
+  outline: 2px white;
 }
 
 .card:hover {
@@ -114,7 +115,24 @@ p {
   float: right;
 }
 
+#enter {
+  float: right;
+}
+
 input {
   float: right;
+}
+
+body {
+  background-image: url('https://wallpaperaccess.com/full/486696.png'); 
+}
+
+.secondary{
+  background-color: #000000
+}
+
+.LogoImg {
+  width: 240px;
+  height: 150px;
 }
 
