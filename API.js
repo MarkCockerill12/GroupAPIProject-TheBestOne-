@@ -16,7 +16,7 @@ function search(){
       console.log(element);
       for (i in element.results){
         console.log(element.results[i].name);
-     
+
         const card = document.createElement('div');
         card.setAttribute('class', 'card');
  
@@ -61,12 +61,8 @@ function search(){
  };
  request.send(null);
 
-// const parser = new request.responseXML.XMLParser();
-//     parser.parse(request.responseXML);
-    // console.log(theXML);
 
-
-// fetch("https://backend.deviantart.com/oembed?url=https://www.deviantart.com/koibohe/art/THIS-BITCH-EMPTY-770902509")
+// fetch("this needs to be the result of the previous get request, so like request.responseXML")
 //   .then((resp) => resp.json())
 //   .then(function(art) {
 //     console.log(art);
@@ -87,10 +83,7 @@ function search(){
 //  }
 // )
 
-//}
 
 }
 
 //this is the code that will be in the more info page
-
-//work in progress
