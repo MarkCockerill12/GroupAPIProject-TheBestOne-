@@ -49,7 +49,7 @@ function search(){
   app.appendChild(container);
 
  var request = new XMLHttpRequest();
- request.open("GET", 'https://backend.deviantart.com/rss.xml?type=deviation&q=by%3Aspyed+sort%3Atime+meta%3Aall', true);
+ request.open("GET", 'https://backend.deviantart.com/rss.xml?type=deviation&q=boost%3Apopular+in%3Adigitalart%2Fdrawings+'+searchString, true);
  request.responseType = 'document';
  request.overrideMimeType('text/xml');
  request.onload = function () {
@@ -61,8 +61,6 @@ function search(){
  };
  request.send(null);
 
- console.log(request.responseXML);
- 
 // const parser = new request.responseXML.XMLParser();
 //     parser.parse(request.responseXML);
     // console.log(theXML);
@@ -93,4 +91,6 @@ function search(){
 
 }
 
+//this is the code that will be in the more info page
 
+//work in progress
