@@ -36,13 +36,17 @@ html {
   font-family: 'Dosis', sans-serif;
   line-height: 1.6;
   color: #666;
-  background: #F6F6F6;
+}
+
+body {
+  background-color:rgb(45, 45, 45);
 }
 
 #root {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 
 h1 {
   text-align: center;
@@ -59,11 +63,6 @@ img {
   max-width: 100%;
 }
 
-.LogoImg {
-  width: 240px;
-  height: 150px;
-}
-
 p {
   padding: 0 2.5rem 2.5rem;
   margin: 0;
@@ -76,11 +75,12 @@ p {
 
 .card {
   margin: 1rem;
-  background: white;
+  background: #000000;
   box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
   border-radius: 12px;
   overflow: hidden;
   transition: all .2s linear;
+  outline: 2px white;
 }
 
 .card:hover {
@@ -112,6 +112,7 @@ p {
   background-image: linear-gradient(120deg, #ffc3a0 0%, #ffafbd 100%);
 }
 
+
 #enter {
   float: right;
 }
@@ -120,13 +121,15 @@ input {
   float: right;
 }
 
-
-
 body {
-  background-image: url('https://wallpaperaccess.com/full/486696.png');
+  background-image: url('https://wallpaperaccess.com/full/486696.png'); 
 }
 
 .secondary{
   background-color: #000000
 }
 
+.LogoImg {
+  width: 240px;
+  height: 150px;
+}
