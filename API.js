@@ -5,10 +5,6 @@ container.setAttribute('class', 'container');
 
 app.appendChild(container);
 
-
-// this is da code for uhhhhhhhh api1 
-urlAPI1 = ('https://api.rawg.io/api/games?key=223cbd9b75454545a8743e05c64645ff&dates=2019-09-01,2019-09-30&platforms=18,1,7')
-
 // this code here is what searches the api
 function search(){
   //THIS IS THE CODE FOR VIDEO GAME API
@@ -44,16 +40,35 @@ function search(){
    }
   )
   
-  //THIS IS THE CODE FOR TMBLUR API
-//   const app = document.getElementById('pics');
+  //THIS IS THE CODE FOR deviant API
+  const app = document.getElementById('pics');
 
-//   const container = document.createElement('div');
-//   container.setAttribute('class', 'container');
+  const container = document.createElement('div');
+  container.setAttribute('class', 'container');
   
-//   app.appendChild(container);
+  app.appendChild(container);
 
-// urlAPI2= "https://backend.deviantart.com/oembed?url=https://www.deviantart.com/koibohe/art/THIS-BITCH-EMPTY-770902509"
-// fetch(urlAPI2)
+ var request = new XMLHttpRequest();
+ request.open("GET", 'https://backend.deviantart.com/rss.xml?type=deviation&q=by%3Aspyed+sort%3Atime+meta%3Aall', true);
+ request.responseType = 'document';
+ request.overrideMimeType('text/xml');
+ request.onload = function () {
+   if (request.readyState === request.DONE) {
+     if (request.status === 200) {
+       console.log(request.responseXML);
+     }
+   }
+ };
+ request.send(null);
+
+ console.log(request.responseXML);
+ 
+// const parser = new request.responseXML.XMLParser();
+//     parser.parse(request.responseXML);
+    // console.log(theXML);
+
+
+// fetch("https://backend.deviantart.com/oembed?url=https://www.deviantart.com/koibohe/art/THIS-BITCH-EMPTY-770902509")
 //   .then((resp) => resp.json())
 //   .then(function(art) {
 //     console.log(art);
@@ -74,8 +89,8 @@ function search(){
 //  }
 // )
 
+//}
+
 }
-
-
 
 
