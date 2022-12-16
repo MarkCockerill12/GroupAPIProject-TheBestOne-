@@ -27,48 +27,56 @@ function search(){
         const h1 = document.createElement('h1');
         h1.textContent = element.results[i].name;
 
-      const p = document.createElement('p');
-      // element.playtime = element.playtime.substring(0, 300); this limits the description - gotta use this with string words
-      p.textContent = `${element.results[i].playtime}`;
+       const img = document.createElement('img');
+       // img.src = `${element.results[i].image_background}`;
+       img.setAttribute("src", element.results[i].image_background);
+       //img.src = element.results[i].image_background;
+
+       const cardButton = document.createElement('a');
+       cardButton.setAttribute("href", ("https://api.rawg.io/api/games?key=223cbd9b75454545a8743e05c64645ff/" + element.results[i].id));
+       cardButton.innerHTML = ("More Information");
 
         container.appendChild(card);
         card.appendChild(h1);
-        card.appendChild(p);
+        card.appendChild(img);
+        card.appendChild(cardButton);
+
       }
    }
   )
   
   //THIS IS THE CODE FOR TMBLUR API
-//   const app = document.getElementById('pics');
+  const app = document.getElementById('pics');
 
-//   const container = document.createElement('div');
-//   container.setAttribute('class', 'container');
+  const container = document.createElement('div');
+  container.setAttribute('class', 'container');
   
-//   app.appendChild(container);
+  app.appendChild(container);
 
-// urlAPI2= 
-// fetch(urlAPI2)
-//   .then((resp) => resp.json())
-//   .then(function(tumblr) {
-//     console.log(tumblr);
+urlAPI2= "https://backend.devhttps://backend.deviantart.com/rss.json?type=deviation&q=boost%3Apopular+in%3Adigitalart%2Fdrawings+frogs"
+fetch(urlAPI2)
+  .then((resp) => resp.json())
+  .then(function(art) {
+    console.log(art);
     
-//       const card = document.createElement('div');
-//       card.setAttribute('class', 'card');
+      const card = document.createElement('div');
+      card.setAttribute('class', 'card');
 
-//       const h1 = document.createElement('h1');
-//       h1.textContent = tumblr.name;
+      const h1 = document.createElement('h1');
+      h1.textContent = art.name;
 
-//       const p = document.createElement('p');
-//       // tumblr.playtime = tumblr.playtime.substring(0, 300); this limits the description - gotta use this with string words
-//       p.textContent = `${tumblr.slug}...`;
+      const p = document.createElement('p');
+      // tumblr.playtime = tumblr.playtime.substring(0, 300); this limits the description - gotta use this with string words
+      p.textContent = `${art.slug}...`;
 
-//       container.appendChild(card);
-//       card.appendChild(h1);
-//       card.appendChild(p);
-//  }
-// )
+      container.appendChild(card);
+      card.appendChild(h1);
+      card.appendChild(p);
+ }
+)
 
 }
+
 
 
 
