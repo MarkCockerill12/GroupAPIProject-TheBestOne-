@@ -36,7 +36,10 @@ html {
   font-family: 'Dosis', sans-serif;
   line-height: 1.6;
   color: #666;
-  background: #F6F6F6;
+}
+
+body {
+  background-color:rgb(45, 45, 45);
 }
 
 #root {
