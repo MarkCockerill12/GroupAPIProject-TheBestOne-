@@ -27,13 +27,19 @@ function search(){
         const h1 = document.createElement('h1');
         h1.textContent = element.results[i].name;
 
-      const p = document.createElement('p');
-      // element.playtime = element.playtime.substring(0, 300); this limits the description - gotta use this with string words
-      p.textContent = `${element.results[i].playtime}`;
+       const img = document.createElement('img');
+       // img.src = `${element.results[i].image_background}`;
+       img.src = element.results[i].image_background;
+
+       const cardButton = document.createElement('a');
+       cardButton.setAttribute("href", ("https://api.rawg.io/api/games?key=223cbd9b75454545a8743e05c64645ff/" + element.results[i].id));
+       cardButton.innerHTML = ("More Information");
 
         container.appendChild(card);
         card.appendChild(h1);
-        card.appendChild(p);
+        card.appendChild(img);
+        card.appendChild(cardButton);
+
       }
    }
   )
@@ -46,29 +52,30 @@ function search(){
   
 //   app.appendChild(container);
 
-// urlAPI2= 
+// urlAPI2= "https://backend.deviantart.com/oembed?url=https://www.deviantart.com/koibohe/art/THIS-BITCH-EMPTY-770902509"
 // fetch(urlAPI2)
 //   .then((resp) => resp.json())
-//   .then(function(tumblr) {
-//     console.log(tumblr);
+//   .then(function(art) {
+//     console.log(art);
     
 //       const card = document.createElement('div');
 //       card.setAttribute('class', 'card');
 
-//       const h1 = document.createElement('h1');
-//       h1.textContent = tumblr.name;
+//       const img = document.createElement('img');
+//       img.src = `${art.results[i].image_background}`;
 
 //       const p = document.createElement('p');
 //       // tumblr.playtime = tumblr.playtime.substring(0, 300); this limits the description - gotta use this with string words
-//       p.textContent = `${tumblr.slug}...`;
+//       p.textContent = `${art.slug}...`;
 
 //       container.appendChild(card);
-//       card.appendChild(h1);
-//       card.appendChild(p);
+//       card.appendChild(img);
+//       //card.appendChild(p);
 //  }
 // )
 
 }
+
 
 
 
