@@ -39,13 +39,6 @@ app.appendChild(container);
        const cardButton = document.createElement('a');
        cardButton.setAttribute("href", ("moreInfo.html"));
        //cardButton.setAttribute("href", urlMoreInfo= "https://api.rawg.io/api/games/" + element.results[i].id+ "?key=223cbd9b75454545a8743e05c64645ff&page_size=1")
-       cardButton.addEventListener("click", assignID);
-       
-       function assignID(){
-        outputDiv.style.display = "block";
-        gameID = element.results[i].id;
-        return gameID;
-      };
 
        cardButton.innerHTML = ("More Info");
 
