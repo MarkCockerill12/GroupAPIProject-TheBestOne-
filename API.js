@@ -1,5 +1,6 @@
 const app = document.getElementById('root');
 
+
 const container = document.createElement('div');
 container.setAttribute('class', 'container');
 
@@ -43,22 +44,31 @@ function search(){
   //THIS IS THE CODE FOR deviant API
   const app = document.getElementById('pics');
 
-  const container = document.createElement('div');
-  container.setAttribute('class', 'container');
-  
-  app.appendChild(container);
+const container = document.createElement('div');
+container.setAttribute('class', 'container');
 
- var request = new XMLHttpRequest();
- request.open("GET", 'https://backend.deviantart.com/rss.xml?type=deviation&q=boost%3Apopular+in%3Adigitalart%2Fdrawings+'+searchString, true);
- request.responseType = 'document';
- request.overrideMimeType('text/xml');
- request.onload = function () {
-   if (request.readyState === request.DONE) {
-     if (request.status === 200) {
-       console.log(request.responseXML);
-     }
-   }
- };
+app.appendChild(container);
+
+var request = new XMLHttpRequest();
+request.open("GET", 'https://backend.deviantart.com/rss.xml?type=deviation&q=boost%3Apopular+in%3Adigitalart%2Fdrawings+'+searchString, true);
+request.responseType = 'document';
+request.overrideMimeType('text/xml');
+request.onload = function () {
+  if (request.readyState === request.DONE) {
+    if (request.status === 200) {
+      const xmlDoc = request.responseXML;
+      const xmlString = new XMLSerializer().serializeToString(xmlDoc);
+
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(xmlString, "application/xml");
+      const json = JSON.stringify(doc);
+
+      console.log("json");
+      console.log(json);
+    }
+  }
+};
+
  request.send(null);
 
 
