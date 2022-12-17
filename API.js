@@ -24,8 +24,7 @@ function search(){
         h1.textContent = element.results[i].name;
 
        const img = document.createElement('img');
-       // img.src = `${element.results[i].image_background}`;
-       img.src = element.results[i].image_background;
+       img.src = element.results[i].background_image;
 
        const cardButton = document.createElement('a');
        cardButton.setAttribute("href", ("https://api.rawg.io/api/games?key=223cbd9b75454545a8743e05c64645ff/" + element.results[i].id));
