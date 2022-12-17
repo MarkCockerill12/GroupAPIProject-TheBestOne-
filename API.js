@@ -28,7 +28,7 @@ function search(){
 
        const cardButton = document.createElement('a');
        cardButton.setAttribute("href", ("https://api.rawg.io/api/games?key=223cbd9b75454545a8743e05c64645ff/" + element.results[i].id));
-       cardButton.innerHTML = ("More Information");
+       cardButton.innerHTML = ("More Info");
 
         container.appendChild(card);
         card.appendChild(h1);
