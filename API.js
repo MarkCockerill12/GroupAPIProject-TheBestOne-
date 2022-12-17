@@ -30,6 +30,7 @@ app.appendChild(container);
  
         const h1 = document.createElement('h1');
         h1.textContent = element.results[i].name;
+        h1.classList.add("mt-3");
 
        const img = document.createElement('img');
        img.src = element.results[i].background_image;
@@ -37,8 +38,6 @@ app.appendChild(container);
         img.style.width = '350px'
 
        const cardButton = document.createElement('a');
-       cardButton.setAttribute("href", ("moreInfo.html"));
-       //cardButton.setAttribute("href", urlMoreInfo= "https://api.rawg.io/api/games/" + element.results[i].id+ "?key=223cbd9b75454545a8743e05c64645ff&page_size=1")
 
        cardButton.innerHTML = ("More Info");
 
