@@ -7,6 +7,7 @@ app.appendChild(container);
 
 // this code here is what searches the api
 function search(){
+  
   //THIS IS THE CODE FOR VIDEO GAME API
   searchString = document.getElementById("GAMENAME").value;
     url = "https://api.rawg.io/api/games?key=223cbd9b75454545a8743e05c64645ff&search="+searchString ;
@@ -22,6 +23,7 @@ function search(){
  
         const h1 = document.createElement('h1');
         h1.textContent = element.results[i].name;
+        h1.classList.add("mt-3");
 
        const img = document.createElement('img');
        img.src = element.results[i].background_image;
@@ -30,6 +32,9 @@ function search(){
 
        const cardButton = document.createElement('a');
        cardButton.setAttribute("href", ("https://api.rawg.io/api/games?key=223cbd9b75454545a8743e05c64645ff/" + element.results[i].id));
+       cardButton.setAttribute("type", "button");
+       cardButton.classList.add("btn");
+       cardButton.classList.add("btn-primary");
        cardButton.innerHTML = ("More Info");
 
         container.appendChild(card);
